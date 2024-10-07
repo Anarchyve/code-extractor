@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Extractor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Code Extractor</h1>
+
+    <!-- 폴더 업로드 섹션 -->
+    <div class="upload-section">
+        <h2>폴더 업로드</h2>
+        <div id="folder-upload-container">
+            <input type="file" webkitdirectory multiple>
+        </div>
+        <button class="add-button" onclick="addFolderInput()">폴더 추가하기</button>
+    </div>
+
+    <!-- 파일 업로드 섹션 -->
+    <div class="upload-section">
+        <h2>파일 업로드</h2>
+        <div id="file-upload-container">
+            <input type="file" multiple>
+        </div>
+        <button class="add-button" onclick="addFileInput()">파일 추가하기</button>
+    </div>
+
+    <button class="combine-button" onclick="combineFiles()">파일 합치기</button>
+    <a id="download-link" class="download-link">합쳐진 파일 다운로드</a>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
